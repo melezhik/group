@@ -1,0 +1,7 @@
+{ 
+
+  "name" : "group",
+  "description" : "Manages Linux/UNIX groups",
+  "version" : "0.0.1",
+  "url" : "https://github.com/melezhik/group"
+}
