@@ -20,15 +20,13 @@ Manages Linux/UNIX groups
 
     $ cat sparrowfile
 
-
     use v6;
 
     use Sparrowdo;
 
-
-    run_task %(
+    task_run %(
       task => 'create foo group',
-      plugin => 'users',
+      plugin => 'group',
       parameters => %(
         name => 'foo',
         action => 'create'
@@ -36,9 +34,9 @@ Manages Linux/UNIX groups
       
     );
 
-    run_task %(
+    task_run %(
       task => 'remove baz group',
-      plugin => 'users',
+      plugin => 'group',
       parameters => %(
         name => 'baz',
         action => 'delete'
