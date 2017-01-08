@@ -5,5 +5,3 @@ if [ $(getent group $name) ]; then
 else
   echo "group $name does not exist"
 fi
-
-echo OK
